@@ -1,0 +1,614 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#main-nav {
+    background-color: rgb(65, 125, 241);
+}
+
+#main-nav > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 73%;
+    padding: 1.5em 0;
+}
+
+#second-nav {
+    width: 73%;
+    margin: 1.7em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-bar{
+    box-sizing: content-box;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    background-color: rgb(217,217,217);
+    height: 2.5em;
+    padding-left: 1.2em;
+    outline: none;
+    width: 100%;
+    font-weight: bold;
+}
+
+#search-btn {
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    align-items: center;
+    width: 2.2em;
+    border-radius: 0 20px 20px 0;
+}
+
+#hide-div{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 22, 22, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-user {
+    align-self: center;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: rgb(65,125,241);
+    padding: 0.6em 1.5em;
+    width: 12em;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+.new-user:hover {
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.icon-btn {
+    width: 0.8em;
+}
+
+.section-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 13%;
+}
+
+.search-content {
+    flex-basis: 35%;
+    display: flex;
+}
+
+.search-icon {
+    width: 52%;
+    height: 52%;
+    padding-left: 0.1em;
+}
+
+.users-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+    justify-content: space-around;
+}
+
+.user-card {
+    width: 23%;
+    margin-top: 1.5em;
+    box-shadow: 3px 3px 10px gray;
+    border-radius: 10px;
+}
+
+.user-header {
+    background-color: rgb(65, 125, 241);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 1em;
+    align-items: center;
+    
+}
+
+.user-text {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.edit-btn {
+    background-color: rgb(21,85,208);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em 0.3em;
+    border-radius: 3px;
+
+}
+
+.edit-btn:hover {
+    background-color: rgb(100, 160, 250);
+}
+
+.edit-icon {
+    width: 90%;
+}
+
+.info-content {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0.8em;
+    padding-right: 1.5em;
+}
+
+.city{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.user-photo {
+    padding: 0.5em 0.7em;
+    border-radius: 5px;
+    width: 20%;
+}
+
+.men {
+    background-color: rgb(31, 173, 167);
+}
+
+.women {
+    background-color: rgb(255, 200, 36);
+}
+
+.hide-overflow {
+    overflow-y: hidden;
+}
+
+/*Form styles*/
+.card-info {
+    background-color: white;
+    border-radius: 10px;
+    width: 32%;
+    padding: 1.5em 1em;
+    box-sizing: content-box;
+}
+
+.action-header {
+    margin: 0 auto;
+    padding-left: 15%;
+    padding-right: 5%;
+    margin-bottom: 1.7em;
+}
+
+.action-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 88%;
+    text-align: center;
+}
+
+.close-btn {
+    background-color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: inline;
+    border: none;
+    cursor: pointer;
+}
+
+.close-img {
+    width: 70%;
+}
+
+.input-form {
+    margin: 0 auto;
+    border-top: 2px solid rgb(217, 217, 217);
+    width: 90%;
+}
+
+.input-content {
+    margin-top: 2em;
+    /* width: 20%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-content  div {
+    flex-basis: 50%;
+}
+
+.labels {
+    font-weight: bold;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.user-field {
+    outline: none;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 30px;
+    height: 2.2em;
+    margin: 0 auto;
+    width: 95%;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding-left: 0.7em;
+    margin-bottom: 1em;
+}
+
+.gender-content {
+    margin-bottom: 2em;
+}
+
+.gender-content div {
+    display: inline;
+}
+
+.gender-label {
+    display: inline;
+}
+
+.form-actions {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-btn {
+    font-size: 0.9em;
+    padding: 0.6em 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.accept-btn {
+    background-color: rgb(65, 125, 241);
+    color: white;
+    font-weight: bold;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.accept-btn:hover:enabled {
+    background-color: rgb(153, 181, 238);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: rgb(65, 125, 241);
+    text-decoration: underline;
+}
+
+.cancel-btn:hover {
+    background-color: rgb(199, 210, 233);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    align-self: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+body{
+    background-color: rgb(243,243,243);
+    
+}
+
+@media (max-width: 1199.98px) { 
+    .user-text{
+        font-size: 0.9em;
+    }
+
+    .info-content {
+        padding: 1em 0.3em;
+        justify-content: space-around;
+
+    }
+
+    .user-photo {
+        box-sizing: content-box;
+        padding: 0.5em 0.2em;
+    }
+
+    .card-info {
+        width: 40%;
+    }
+
+    .action-header {
+        padding-right: 0%;
+    }
+
+    .action-title {
+        font-size: 1.3em;
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 991.98px) { 
+    #second-nav {
+        margin: 0.8em auto;
+    }
+
+    .user-card {
+        width: 48%;
+    }
+
+    .user-text{
+        font-size: 1.2em;
+    }
+
+    .info-content {
+        padding: 1em 10%;
+        padding-right: 17%;
+        justify-content: space-between;
+
+    }
+
+    .user-photo {
+        box-sizing: content-box;
+        padding: 0.5em 0.7em;
+    }
+
+    .city {
+        font-size: 1.2em;
+    }
+
+    .phone-number {
+        font-size: 1.2em;
+    }
+
+    .card-info {
+        width: 40%;
+    }
+
+    .action-header {
+        padding-right: 0%;
+        margin-bottom: 0.8em;
+    }
+
+    .action-title {
+        font-size: 1.3em;
+        width: 80%;
+    }
+
+    .input-content {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .labels {
+        margin-bottom: 0.3em;
+        padding-left: 0.2em;
+        font-size: 0.8em;
+    }
+
+    .input-form {
+        width: 80%;
+    }
+
+    .gender-content {
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+        display: flex;
+        justify-content: space-around;
+        padding-right: 1em;
+        align-items: center;
+    }
+
+    .user-field {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767.98px) { 
+    
+    #second-nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #search-bar {
+        height: 2.8em;
+    }
+
+    .section-name {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .usr-img {
+        width: 10%;
+    }
+
+    .users-content {
+        flex-direction: column;
+    }
+
+    .user-card {
+        width: 70%;
+        margin: 1em auto;
+    }
+
+    .user-text{
+        font-size: 1.4em;
+    }
+
+    .info-content {
+        padding: 1em 8%;
+        padding-right: 15%;
+        justify-content: space-between;
+    }
+
+    .user-photo {
+        box-sizing: content-box;
+        padding: 0.7em 0.9em;
+    }
+
+    .search-content {
+        flex-basis: 100%;
+        margin-top: 1em;
+    }
+
+    .card-info {
+        width: 50%;
+    }
+    
+    .action-header {
+        padding-right: 0%;
+        margin-bottom: 0.5em;
+    }
+
+    .action-title {
+        font-size: 1.2em;
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 575.98px) { 
+    #main-nav > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-bottom: 0.5em;
+    }
+
+    .user-photo {
+        box-sizing: content-box;
+        padding: 0.5em 0.7em;
+    }
+
+    .city {
+        font-size: 0.8em;
+    }
+
+    .phone-number {
+        font-size: 0.8em;
+    }
+
+    .user-text {
+        font-size: 0.8em;
+    }
+
+    .user-photo {
+        padding: 0.5em 0.7em;
+    }
+
+    .info-content {
+        padding: 1em;
+        justify-content: space-around;
+    }
+
+    
+    .card-info {
+        width: 75%;
+    }
+    
+    .action-header {
+        padding-right: 0%;
+        margin-bottom: 0.5em;
+    }
+
+    .action-title {
+        font-size: 1.2em;
+        width: 75%;
+    }
+}
+
+
+/*Validaciones*/
+.border-error {
+    border: 2px solid red;
+}
+
+.error-message {
+    font-size: 0.8em;
+}
+
+.accept-btn:disabled {
+    background-color: rgb(151, 182, 245);
+}

@@ -1,0 +1,253 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/*Start here*/
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 1.3em;
+}
+
+.info p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8em;
+    margin-top: 2em;
+    text-align: left;
+    font-size: 0.95em;
+    padding-right: 3.5em;
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%);
+    max-width: 1220px;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+}
+
+.standout {
+    color: hsl(277, 64%, 61%);
+}
+
+.info {
+    box-sizing: border-box;
+    padding: 3em;
+    width: 50%;
+}
+
+.cont-img {
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+    background-color: hsl(277, 64%, 61%);
+}
+
+.img {
+    /* opacity: 0.75; */
+    height: 100%;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    mix-blend-mode: multiply;
+}
+
+.stats {
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3.5em;
+}
+
+.number {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    
+}
+
+.category {
+    color:hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 0.7em;
+    margin-top: 1em;
+}
+
+.mobile-img {
+    display: none;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .card {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .info p {
+        font-size: 0.8em;
+    }
+
+    .number {
+        font-size: 1em;
+    }
+
+    .category {
+        font-size: 0.8em;
+    }
+
+    .stats {
+        padding-right: 1em;
+        margin-top: 1.75em;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    h2 {
+        text-align: center;
+        font-size: 2.2em;
+    }
+
+    .info p {
+        text-align: center;
+        padding: 0;
+        font-size: 1.5em;
+        margin-top: 1.5em;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 80%;
+    }
+
+    .cont-img {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        padding: 1.8em;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .cont-img, .img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+        margin-top:1em;
+    }
+
+    .stats span {
+        margin-top: 1.5em;
+    }
+
+    .number {
+        font-size: 1.7em;
+    }
+
+    .category {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 575.98px) { 
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    .info p {
+        font-size: 0.95em;
+    }
+
+    .info {
+        padding: 1.8em;
+    }
+
+    .stats {
+        margin-top: 1em;
+    }
+
+    .stats span {
+        margin-top: 1.5em;
+    }
+
+    .number {
+        font-size: 1.2em;
+    }
+
+    .category {
+        font-size: 0.7em;
+    }
+
+}

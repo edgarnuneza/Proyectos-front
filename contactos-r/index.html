@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <nav id="main-nav">
+      <div>
+        <h1>Ejercicio CMS</h1>
+        <button class="new-user">
+          Agregar usuario
+          <img
+            class="icon-btn"
+            src="styles/Assets/PNG/icono_agregar.png"
+            alt="plus-icon"
+          />
+        </button>
+      </div>
+    </nav>
+    <nav id="second-nav">
+      <div class="section-name">
+        <img
+          class="usr-img"
+          src="styles/Assets/PNG/icono_usuarios.png"
+          alt=""
+        />
+        <h2>Usuarios</h2>
+      </div>
+      <div class="search-content">
+        <input id="search-bar" type="text" placeholder="Buscador" />
+        <label for="search-bar" id="search-btn">
+          <img
+            class="search-icon"
+            src="styles/Assets/PNG/icono_buscar.png"
+            alt="search-icon"
+          />
+        </label>
+      </div>
+    </nav>
+    <main>
+      <section class="users-content">
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Victoria Terrazas</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo women"
+              src="styles/Assets/PNG/icono_mujer.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Alejandro García</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo men"
+              src="styles/Assets/PNG/icono_hombre.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Victoria Terrazas</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo women"
+              src="styles/Assets/PNG/icono_mujer.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Alejandro García</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo men"
+              src="styles/Assets/PNG/icono_hombre.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Victoria Terrazas</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo women"
+              src="styles/Assets/PNG/icono_mujer.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Alejandro García</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo men"
+              src="styles/Assets/PNG/icono_hombre.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Victoria Terrazas</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo women"
+              src="styles/Assets/PNG/icono_mujer.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Alejandro García</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo men"
+              src="styles/Assets/PNG/icono_hombre.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Victoria Terrazas</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo women"
+              src="styles/Assets/PNG/icono_mujer.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Alejandro García</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo men"
+              src="styles/Assets/PNG/icono_hombre.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Victoria Terrazas</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo women"
+              src="styles/Assets/PNG/icono_mujer.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Alejandro García</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo men"
+              src="styles/Assets/PNG/icono_hombre.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Victoria Terrazas</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo women"
+              src="styles/Assets/PNG/icono_mujer.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Alejandro García</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo men"
+              src="styles/Assets/PNG/icono_hombre.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Victoria Terrazas</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo women"
+              src="styles/Assets/PNG/icono_mujer.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-header">
+            <span class="user-text">Alejandro García</span>
+            <button class="edit-btn">
+              <img
+                class="edit-icon"
+                src="styles/Assets/PNG/icono_editar.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="info-content">
+            <img
+              class="user-photo men"
+              src="styles/Assets/PNG/icono_hombre.png"
+              alt=""
+            />
+            <p class="user-info">
+              <span class="city">Juarez, Chihuahua</span>
+              <span class="phone-number">656 234 7888</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <div id="hide-div">
+      <div class="card-info">
+        <div class="action-header">
+          <p class="action-title">Agregar usuario</p>
+          <button class="close-btn">
+            <img
+              src="styles/Assets/PNG/icono_cerrar.png"
+              class="close-img"
+              alt="close"
+            />
+          </button>
+        </div>
+        <div id="fr-new-user" class="input-form">
+          <div class="input-content">
+            <div>
+              <label for="user-name" class="labels">Nombre</label>
+              <input type="text" id="user-name" class="user-field" required />
+            </div>
+            <div>
+              <label for="user-lastname" class="labels">Apellido</label>
+              <input type="text" id="user-lastname" class="user-field" />
+            </div>
+            <div>
+              <label for="user-location" class="labels">Ubicacion</label>
+              <input type="text" id="user-location" class="user-field" />
+            </div>
+            <div>
+              <label for="user-phone" class="labels">Celular</label>
+              <input type="text" id="user-phone" class="user-field" />
+            </div>
+          </div>
+          <div class="gender-content">
+            <div>
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                class="radio-style"
+                value="m"
+              />
+              <label for="male" class="labels gender-label">Hombre</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                class="radio-style"
+                value="f"
+                checked
+              />
+              <label for="female" class="labels gender-label">Mujer</label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="form-btn accept-btn" disabled>Agregar</button>
+            <button class="form-btn cancel-btn">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
